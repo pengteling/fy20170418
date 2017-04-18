@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS盒模型</title>
+	<style>
+		body{
+			font-size: 30px;
+		}
+		.box{
+			color: #fff;
+
+			display: inline-block;
+			/* display: inline; */
+			padding:0px 10px;
+			margin: 0 10px;
+			background: #00f;
+
+			width: 200px;
+			height: 100px;
+		}
+		.inline-box{
+			color: #f00;
+
+			/* display: inline; */
+			display: block;
+			padding: 0px;
+			margin: 0 10px;
+			background: #0f0
+		}
+	</style>
+</head>
+<body>
+
+	<div class="box">
+		这是一个盒子
+	</div>
+	<div class="box">
+		这是一个盒子
+	</div>
+
+<br>
+	<span class="inline-box">
+		这是一个inline元素
+	</span>
+	<span class="inline-box">
+		这是一个inline元素
+	</span>
+
+
+	
+</body>
+</html>

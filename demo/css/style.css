@@ -1,0 +1,375 @@
+/* 这些是CSS重置样式 */
+ul,li{
+	list-style: none;
+}
+html,body,table,tr,td,ul,li,p,input,select,img{
+	padding:0;
+	margin: 0;
+	border:0
+}
+
+/* 这里是通用样式 */
+body{
+	font-family: "微软雅黑","宋体";
+	font-size: 14px;
+}
+a{
+	color:#535353;
+	text-decoration: none;	
+}
+.main{
+	width:1000px;
+	margin: 0 auto;
+}
+.clearfix:before,.clearfix:after{ 
+	    content:""; 
+	    display:table; 
+} 
+.clearfix:after{clear:both;} 
+.clearfix{ 
+    *zoom:1;/*IE/7/6*/
+}
+
+
+
+
+
+/* 这里开始正式写分部样式 */
+/* 这里是头部CSS */
+.header {
+	height: 90px;
+	border-bottom: #ff6960 5px solid;
+	background: #ffffff;
+
+}
+.header .logo{
+	float:left;
+	font-size: 30px;
+	line-height: 90px;
+}
+.header .logo a{
+	color:#28274f;		
+}
+
+.header .nav{
+	float: left;
+}
+
+.header .tel{
+	float: right;
+}
+
+.header .menu{
+	float: left;
+	width:80px;
+	height: 24px;
+	margin-top: 34px;
+	margin-left: 32px;
+	
+	background: url(../images/bg-select.png);
+	position: relative;	
+	
+}
+.header .menu span{
+	color:#fff;
+	margin-left:18px;
+	line-height: 22px;	
+}
+.header .menu i{
+	display: inline-block;
+	width:9px;
+	height: 5px;
+	background: url(../images/ico-arrow-down.png);
+	 margin-right: 10px;
+	 margin-top: 10px;
+	 float: right;   
+	/* vertical-align: 3px;
+	margin-left: 14px;  */
+	
+	/* position: absolute;
+	right:10px;
+	top: 10px;  */
+}
+.header .menu ul{
+	display: none;
+	position: absolute;
+	left: 0;
+	top:24px;
+	width:216px;
+	height: 168px;
+	padding-top: 14px;
+	background: url(../images/bg-menu-arrow.png) 0 -24px;
+}
+.header .menu ul li{
+	float:left;
+	width:33.3%;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+}
+.header .menu ul li a{
+	color:#fff;	
+}
+
+.header .nav{	
+	line-height: 90px;
+	margin-left: 46px;		
+} 
+.header .nav a{
+	margin-right: 50px;
+	color:#28274f;
+	font-size: 16px;
+}
+
+.header .tel{
+	width:150px;
+	height: 90px;
+	background: url(../images/tel.png) 0 28px no-repeat; 
+	line-height: 90px;
+	font-size: 24px;
+	color:#ff6960;
+	padding-left: 46px;
+	font-family: "Arial";
+
+
+}
+/* 这里是banner部分CSS */
+.banner{
+	height: 429px;
+	background: url(../images/banner-bg.jpg) top center no-repeat;
+}
+
+/* 这里是imain绝对定位的代码 */
+.imain{
+	position: relative;
+	width:100%;
+	left:0;
+	/* top: 444px; */
+	top: -80px;
+	background: #fff;
+}
+.imain .tit{
+	width:202px;
+	height: 52px;
+	background: url(../images/bg-subtit.png);
+	line-height: 52px; 
+	padding-left: 78px;
+	font-size: 18px;
+	color: #fff;
+	position: relative;
+	left: 0;
+	top: -12px;
+}
+
+/* 这里是课程简介部分CSS */
+
+/* .course-intro .tit{
+	width:202px;
+	height: 52px;
+	background: url(../images/bg-subtit.png);
+	line-height: 52px; 
+	padding-left: 78px;
+	font-size: 18px;
+	color: #fff;
+	position: relative;
+	left: 0;
+	top: -12px;
+} */
+.course-intro .con{
+	padding:30px 36px;
+}
+
+.course-intro .con table{
+	width:100%;	
+	border-collapse: collapse;
+	color:#333333;
+}
+.course-intro .con table td{
+	border:#eaeaea 1px solid;
+	padding-left: 10px;
+}
+.course-intro .con table td.table-head{
+	background: #f9f9f9;
+	height: 40px;
+	width: 145px;
+	text-align: center;
+	padding-left: 0;
+}
+
+.course-intro .con p{
+	margin-top: 26px;
+	color:#535353;
+	line-height: 24px;
+}
+
+/* 这里是教学模式CSS */
+/* .course-edu-module .tit{
+	width:202px;
+	height: 52px;
+	background: url(../images/bg-subtit.png);
+	line-height: 52px; 
+	padding-left: 78px;
+	font-size: 18px;
+	color: #fff;
+	position: relative;
+	left: 0;
+	top: -12px;
+} */
+
+.course-edu-module .con{
+	padding:38px 36px;
+}
+
+.course-edu-module .con p{	
+	color:#535353;
+	line-height: 24px;
+}
+
+/* 这里是师资团队的CSS部分 */
+.course-teachers .teacherlist{
+	/* overflow:hidden; */
+	margin: 35px 0;
+	width:1200px;
+}
+.course-teachers .teacherlist li{
+	width:486px; 
+	height: 188px;
+	border:#ebeaef 1px solid;
+	position: relative;
+	float:left;
+	margin-right: 26px;
+	margin-bottom: 26px;
+}
+.course-teachers .teacherlist li .pic{
+	position: absolute;
+	left: -1px;
+	top: -1px;
+}
+ .course-teachers .teacherlist li .tname{
+	position: absolute;
+	left:254px;
+	top: 35px;
+	width:210px;
+	line-height: 24px;
+	color:#535353;
+}
+.course-teachers .teacherlist li .intro{
+	position: absolute;
+	left: 254px;
+	top: 62px;
+	width:210px;
+	font-size: 12px;
+	color:#9a9a9a;
+} 
+
+/* .course-teachers .teacherlist li .fr{
+	float:right;
+}
+.course-teachers .teacherlist li .tname{
+	
+}
+
+.course-teachers .teacherlist li .intro{
+	
+	width:210px;
+} */
+
+.course-students .stulist{
+	height: 227px;
+	margin-top: 38px;
+	margin-bottom: 58px;	
+	position: relative;
+}
+.course-students .stulist .bd{
+	width:920px;
+	overflow: hidden;
+	margin:0 auto;	
+	
+}
+.course-students .stulist ul{
+	width:3000px;
+	height: 227px;		
+}
+.course-students .stulist ul li{
+	margin-right: 14px;
+	float: left;
+}
+.course-students .stulist ul li img{
+	width:218px;
+	height: 227px;
+	border:0;
+}
+
+.course-students .stulist .bd .prev,.course-students .stulist .bd .next{
+	width:40px;
+	height: 227px;	
+	position: absolute;
+}
+
+.course-students .stulist .bd .prev{
+	left: 0px;
+	top: 0;
+	background: url(../images/icon-arrow-left.png) 14px 104px no-repeat  #f1f1f1;
+}
+.course-students .stulist .bd .prev:hover{
+	/* 鼠标变手形 */
+	cursor: pointer;
+	background-color: #ebeaef;
+}
+
+.course-students .stulist .bd .next{
+	right: 0px;
+	top: 0;
+	background: url(../images/icon-arrow-right.png) 14px 104px no-repeat  #f1f1f1;
+}
+.course-students .stulist .bd .next:hover{
+	cursor: pointer;
+	background-color: #ebeaef;
+}
+.form-bar
+{
+	position: fixed;
+	left:0;
+	bottom: 0;
+	width:100%;
+	height: 68px;
+	background: #363636;
+	text-align: center;
+	line-height: 68px;
+}
+
+.form-bar .xin{
+	font-size: 18px;
+	color:#ff6960;	
+}
+.form-bar .font22{
+	font-size: 22px;
+	color: #ff6960;
+}
+.form-bar .ipt-txt{
+	width: 113px;
+	height: 28px;
+	color:#838383;
+	background: #0b111a;
+	border:#383f4a 1px solid;
+	margin-left: 22px;
+	padding-left: 15px;
+}
+.form-bar .ipt{
+	width:98px;
+	height: 28px;
+	margin-left: 22px;
+	color:#838383;
+	background: #0b111a;
+	border:#383f4a 1px solid;
+}
+.form-bar .ipt-submit{
+	width:100px;
+	height: 30px;
+	color: #fff;
+	font-size: 14px;
+	letter-spacing: 5px;
+	margin-left: 16px;
+	background: #ff6960;
+	border-radius: 2px;
+}

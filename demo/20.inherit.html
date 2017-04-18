@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS继承演示</title>
+	<style>
+		.container{
+			/* 可继承的 */
+			color: red; 			
+			letter-spacing: 5px;
+			text-align: center;
+			/* 不可继承的 */
+			padding: 10px;
+			border: 10px #00f solid;
+			margin: 10px;
+		}
+		p{
+			color: blue;
+		}
+		ul{
+			list-style: none;
+		}
+		table{
+			border-collapse: collapse;		
+		}
+		
+		td{
+			border: #333 1px solid;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="inner">
+			<p>
+				这是一段文字<br>
+				这是一段文字
+			</p>
+
+		</div>
+	</div>
+
+	<ul>
+		<li>这是列表</li>
+		<li>这是列表</li>
+		<li>这是列表</li>
+	</ul>
+
+	<table>
+		<tr>
+			<td>1</td><td>2</td>
+		</tr>
+		<tr>
+			<td>3</td><td>4</td>
+		</tr>
+	</table>
+	
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>绝对定位演示</title>
+	<style>		
+	
+		.box-1{
+			width: 700px;
+			height: 500px;
+			position: relative;
+			border:  #000 10px solid;
+			padding: 20px;
+			background: #fff;
+			margin-top: 100px;
+			margin-left: 200px;
+			z-index: 2
+		}
+		.box-2{
+			width: 500px;
+			height: 360px;
+			position: absolute;
+			/* z-index: 1; */
+			/* z-index: auto; */
+			
+			/* left:-50px;
+			top: 20px; */			
+		}
+		.box-2 .txt{
+			/* display: none; */
+			/* visibility: hidden; */
+			position: absolute;
+			width: 100%;
+			left: 0;
+			bottom: 0;
+			height: 30px;
+			line-height: 30px;
+			color: #fff;
+			text-align: center;
+			background: rgba(0,0,0,0.5);
+			z-index: 3;
+		}
+		.box-2 .pic2{
+			
+			width: 250px;
+			height: 180px;
+			position: absolute;
+			bottom: -10px;
+			left: 200px;
+			z-index: 2;
+		}
+		.box-3{
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			top: 300px;
+			z-index: 1;
+		}
+		
+	</style>
+</head>
+<body>
+
+
+<div class="box-1">
+	
+	<div class="box-2">
+		<img src="pic/1.jpg" alt="">
+		<div class="txt">这是一张风景图</div>
+		<img src="pic/2.jpg" class="pic2" alt="">
+	</div>
+	<p>
+		这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字
+	</p>
+
+	
+</div>
+
+<div class="box-3">
+		<img src="pic/3.jpg" alt="">
+</div>
+
+</body>
+</html>
