@@ -5,9 +5,14 @@
 }
 
 a {
-    color: #FF8C78;
+    color: #fff;
     background-color: transparent;
     border-bottom: 0
+}
+.note a{
+  color:#333;
+  margin:0;
+  padding:0;
 }
 
 a:hover {
@@ -19,13 +24,13 @@ h1,
 h2,
 h3 {
     color: #fff;
-    text-shadow: 0px 0px 0px #fff, 0px 0px 0px rgba(0, 0, 0, 0.2); 
+    text-shadow: 0px 0px 0px #fff, 0px 0px 0px rgba(0, 0, 0, 0.2);
     letter-spacing: 4px;
     font-weight: bolder
 }
 
 h1 {
-     text-shadow: 0px 0px 0px #fff, 0px 0px 0px rgba(0, 0, 0, 0.2) 
+     text-shadow: 0px 0px 0px #fff, 0px 0px 0px rgba(0, 0, 0, 0.2)
 }
 
 table {
