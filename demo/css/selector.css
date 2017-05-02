@@ -1,0 +1,184 @@
+/*  a[href]{
+	color:#f00;
+}
+[data-fy]{
+	color:#f00
+}  */
+/* .container .txt{
+	color:green;
+}
+.txt{
+	color:yellow;
+}
+.container .bottom .txt{
+	color:red;
+} */
+
+/* .txt{
+	color:green;
+}
+#content{
+	color:red;
+} */
+
+
+/* div.container{
+	
+}
+ul.container{
+	
+} */
+/* class类名 含有 important */
+  
+ 
+/* p[data-type~=important]{
+	color:green;
+}     */
+/* p.important{  
+ 	color:red;
+}  */
+/* [~=]  和 . 的区别 */
+/* p[data-type~=important]{
+	color:green
+} */
+/* p[class^=important]{
+	color:green;
+} */
+/* p[class$=important]{
+	color:green;
+} */
+
+/*  p[class^=important]{
+	color:green;
+}
+
+p[class$=important]{
+	color:green;
+}
+ */
+ 
+/* p[class*=important]{
+	color:green
+}   */
+
+/* important-us 会适配 但直接加空格 不会适配 */
+/*  p[class|=important]{
+	color:green;
+} 
+[class|=imain]{
+	color:#f00;
+} */
+
+/* 子元素选择器  写法 >两侧的空格可写可不写 */
+
+/* .important-us > .bottom{
+	 color:red; 
+}   */
+
+
+/* .important + .four{
+	color:red;
+}  */
+/* .txt{
+	background: #ddd;
+}  */
+
+/* 英文会显示成大写字母 的小型字体 */
+/* .txt{
+	font-variant: small-caps;
+} */
+
+/* 没有安装的字体将不会显示 */
+/* .txt{
+	font-family: "方正兰亭" 
+}
+ */
+
+
+/* a{
+		
+		font-weight: bold;
+	}
+	a:link {color:#FF0000;}		
+	a:visited {color:yellow;}	
+	a:hover {color:#FF00FF;}	
+	a:active {color:#0000FF;} */	
+
+/* a:first-child{
+	color:#f00;
+} */
+
+/* p.important-us::first-letter{
+	color:#f00;
+	font-size: 30px;
+}
+p.important-us::first-line{
+	color:#f00;
+	font-size: 30px;
+} */
+.important-us{
+	position: relative;;
+}
+.important-us::before{
+	content: "before" ;
+	color:#0f0;
+	font-size: 22px;
+	position: absolute;
+	width:100px;
+	height: 10px;
+	left: 0;
+	top: -20px;
+}
+.important-us::after{
+	content: "after" ;
+	color:#0f0;
+	font-size: 22px;
+	position: absolute;
+	width:100px;
+	height: 10px;
+	right: 0;
+	bottom: -20px;
+}
+
+/* .bottom::first-letter{
+	font-weight: bold;
+	font-size: 30px;
+	
+}
+.bottom{
+	position: relative;
+}
+.bottom::before{
+	content: '这是伪元素before';
+	position: absolute;
+	width:100px;
+	height: 20px;
+	left: 0;
+	top: -40px;
+	color: red;
+}
+.bottom::after{
+	content: '这是伪元素after';
+	position: absolute;
+	width:100px;
+	height: 20px;
+	left: 0;
+	top: 60px;
+	color: red;
+} */
+
+/* .container{	
+	height: 700px;
+	background-color: #0f0;
+	background-image: url("../images/index-banner.jpg");
+	background-repeat: no-repeat;
+	 background: url("../images/index-banner.jpg") center center no-repeat  ; 	
+	font-style: oblique ;
+}
+.bottom{
+	font-variant: small-caps;
+	font-weight: 700  ;
+	font-size: 18px;
+	font-family: "宋体";
+	font:bold 18px/20px "微软雅黑";
+} 

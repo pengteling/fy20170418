@@ -1,18 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
 	<meta charset="UTF-8">
 	<title>CSS选择器权重计算演示</title>
+	<link rel="stylesheet" href="css/css.css">
 	<style>
-	/* 优先级 0,1,5,1 */
-		 .container #inner.inner .big .small a.link{
 
-			color: #f00;
-		 }
-	/* 优先级 0,1,5,1 */
-		 .container .inner #big.big .small a.link{ 
-			color: #00f;
-		 }
+
+/* 	优先级 0,1,5,1
+	 .container #inner.inner .big .small a.link{
+
+		color: #f00;
+	 }
+优先级 0,1,5,1
+	 .container .inner #big.big .small a.link{ 
+		color: #00f ;
+	 } */
+		
+		.container div.inner .big .small .link{
+		 	color: #f00;
+		}
+		 
 
 	</style>
 </head>
@@ -22,7 +30,9 @@
 <div class="container">
 	<div class="inner" id="inner">
 		<div class="big" id="big">
-			<div class="small"><a href="" id="link" class="link">链接文字</a></div>
+			<p class="small">
+				<a href="" id="link" class="link">链接文字</a>
+			</p>
 		</div>
 	</div>
 </div>
