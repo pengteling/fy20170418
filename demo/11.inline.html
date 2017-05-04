@@ -4,29 +4,55 @@
 	<meta charset="UTF-8">
 	<title>行内框  （行级元素、inline) </title>
 	<style>
-		*{
-			padding: 0;
-			margin: 0;
-			border: 0;
-
+		div{
+			/* word-spacing: -5px; */
 		}
 		span{
 			font-size: 30px;
 			background: red;
 			color: #fff;
-			margin: 10px;
-			padding: 0px;	
+
+			/* margin: 10px; */
+			/* padding: 0px;	
 			border-top:  #0f0 1px solid;
-			border-bottom: #0f0 1px solid;
+			border-bottom: #0f0 1px solid; */
 			/* line-height: 90px; */
-			float: left;
+			
+		}
+		/* .ipt-txt{
+			display: inline;
+			width: 300px;
+			height: 40px;
+		} */
+		p em{
+			line-height: 80px;
+			vertical-align: 40px;
 		}
 	</style>
 </head>
 <body>
 	
-	<span>这是第一段文字</span>  
-	<span>这是第二段文字</span>
-	
+	<div>
+		<span>这是第一段文字</span>  
+		<span>这是第二段文字</span><br>
+		<span>这是第三段文字</span>
+	</div>
+	<p>这是一行普通的文字，这里有个<em>em</em>标签</p>
+
+	<!-- <div>
+		<img src="pic/1.jpg" alt="">
+		<img src="pic/2.jpg" alt="">
+	</div>
+
+	<div>
+		<input type="text" class="ipt-txt"><input type="text" class="ipt-txt">
+	</div>
+
+	<div>
+		<span class="ipt-txt">test</span><span class="ipt-txt">test</span>
+	</div> -->
+	<p style="background: #333; text-align: center;color:#fff">
+		<img src="pic/1.jpg" alt=""> <span style="display: inline-block; color:#333;background: #fefefe">xxxx</span>
+	</p>
 </body>
 </html>

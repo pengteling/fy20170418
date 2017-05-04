@@ -3,28 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <title>Table细边框经典实现</title>
+  <style>
+    th,td{
+        border: #333 1px solid;
+    }
+    table{
+        border-collapse: collapse
+    }
+  </style>
 </head>
 <body>
 
 
-<table border="0" cellpadding="2" cellspacing="1" bgcolor="#333">
+<table >
     <thead>
-        <tr bgcolor="#fff">
+        <tr >
             <th>表头</th>
             <th>表头</th>
             <th>表头</th>
         </tr>
     </thead>
     <tbody>
-        <tr bgcolor="#fff">
+        <tr >
             <td colspan="2">单元格内容单元格内容</td>
             <td rowspan="3"><img src="images/logo.png" alt="" /></td>
         </tr>
-        <tr bgcolor="#fff">
+        <tr >
             <td rowspan="2">单元格内容单元格内容</td>
             <td>单元格内容</td>
         </tr>
-        <tr bgcolor="#fff">
+        <tr >
             <td>单元格内容</td>
         </tr>
     </tbody>
