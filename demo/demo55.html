@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>绝对定位小案例</title>
+	<style>
+		ul,li{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		.menu{
+			width: 80px;
+			height: 24px;
+			background: url(images/bg-select.png);
+			text-align: center;
+			line-height:24px;
+			position: relative;
+		}
+		.menu span{
+			color: #fff;
+			font-size: 14px;
+			vertical-align: 2px;
+		}
+		.menu .arrow-down{
+			/* display: inline-block; */
+			position: absolute;
+			width: 9px;
+			height: 5px;
+			background: url(images/buttom.png);
+			top: 9px;
+			right: 8px;
+		}
+		.menu ul{			
+			position: absolute;
+			left: 0;
+			top: 24px;
+			width: 206px;
+			height: 182px;
+			background: url(images/bg-menu-arrow.png) 0 -24px;
+
+		}
+		.menu ul li{
+			display: inline-block;
+			width: 31%;
+			height: 42px;
+			line-height: 42px;
+		}
+		.menu ul li a{
+			color: #fff;
+			text-decoration: none;
+			font-size: 14px;
+		}
+	</style>
+</head>
+<body>
+	<div class="menu">
+		<div class="menu-select">
+			<span>书法</span>			
+			<i class="arrow-down"></i>
+		</div>
+		<ul>
+			<li><a href="">书法</a></li>
+			<li><a href="">书法</a></li>
+			<li><a href="">书法</a></li>
+			<li><a href="">书法</a></li>
+			<li><a href="">书法</a></li>
+			<li><a href="">书法</a></li>
+			<li><a href="">书法</a></li>
+			<li><a href="">书法</a></li>
+			<li><a href="">书法</a></li>
+			<li><a href="">书法</a></li>
+			<li><a href="">书法</a></li>
+			<li><a href="">书法</a></li>
+		</ul>
+	</div>
+	
+</body>
+</html>

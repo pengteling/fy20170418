@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="http://www.51texiao.cn/" />
+    <title>margin</title>
+    <style type="text/css">
+    div.top,div.bottom {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .top {
+    	/* margin-top: 30px; */
+        background-color: green;
+        margin-bottom: -20px;
+    }
+    
+    .bottom {
+        background-color: red;
+        margin-top: 10px;
+        position: relative;
+        left: 20px;
+    }
+    /* .container{
+    	background: #00f;
+    } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    	<div class="top"></div>
+    	<div style="height: 0px"></div>
+    	<div class="bottom"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>z-index</title>
+	<style>
+		div{
+			width: 500px;
+			height: 360px;
+		}
+		.box-1{
+			position: relative;
+			z-index: 1;
+			border: #f00 10px solid;
+
+		}		
+		.box-1 img{
+			position: absolute;
+			z-index: 1;
+		}
+
+		.box-2{
+			position: relative;
+			z-index: 2;
+			border: #00f 10px solid;
+			margin-top: -200px;
+			margin-left: 50px;
+		}
+		.box-2 img{
+			position: absolute;
+			z-index: 2;
+		}
+
+		.box-3{			
+			position: relative;
+			z-index: 0;
+			border: #0f0 10px solid;
+			margin-top: -300px;
+			margin-left: 100px;
+		}
+		.box-3 img{
+			position: absolute;
+			z-index: 3;
+		}
+		.box-3 .txt{
+			position: absolute;
+			width: 500px;
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+			background: rgba(0,0,0,0.5);
+			color: #fff;
+			z-index: 3;			
+		}
+	</style>
+</head>
+<body>
+	<div class="box-1">
+		<img src="pic/1.jpg" alt="">
+	</div>
+	<div class="box-2">
+		<img src="pic/2.jpg" alt="">
+	</div>
+	<div class="box-3">
+		<img src="pic/3.jpg" alt="">
+		<span class="txt">这是图片标题</span>
+	</div>
+	
+</body>
+</html>

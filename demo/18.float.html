@@ -12,11 +12,12 @@
 	} 
 	.clearfix:after{clear:both;} 
 	.clearfix{ 
-	    *zoom:1;/*IE/7/6*/
+	    *zoom:1;IE/7/6
 	}
 	
 
 	.container{
+		font-size: 0;
 		width: 100%;
 		/* 清除浮动 */
 		
@@ -26,36 +27,44 @@
 		/* overflow: hidden; */
 		/* float: left; */
 	}
-	.container div.box{
-		
+	.container div.box{	
+		font-size: 16px;	
 		width: 200px;
 		height: 200px;
-		border:  #f00 1px solid;
-		
-
-		
+		border:  #f00 1px solid;		
 	}
-	.container .box1{
-		width: 500px;
-		
+	.container .box1.box{
+		width: 200px;		
 		float: left;
+		/* height: 700px; */
+		/* background: transparent; */
+		background: #0f0;
 
 	}
 	.container div.box.box2{
 		
-		/* float: right; */
-		float: left;
-		height: 300px
-
-	}
-	.container .box3{
 		/* float: left; */
-		clear: left;
+		float: left;
+	/* 	height: 300px */
 
 	}
-	/* .clear{
+	.container .box.box3{
+		float: left;
+		/* clear: left; */
+		/* height: 500px; */
+
+	}
+	.container div.box4{
+		
+		/* float: left; */
+		width: 150px;
+		height: 300px;
+		border: #00f 1px solid;
+		/* display: inline-block; */
+	}
+	.clear{
 		clear: both;
-	} */
+	}
 	
 	p{
 		/* position: relative */
@@ -65,11 +74,11 @@
 	</style>
 </head>
 <body>
-	<div class="container">
-		<div class="box box1">1</div>
-		<div class="box box2">2</div>
-		<div class="box box3">3</div>
-		<!-- <div class="clear"></div> -->
+	<div class="container clearfix">
+		<div class="box box1" >1</div>
+		<div class="box box2" >2</div>
+		<div class="box box3" >3</div>
+		<div class="box box4" >4</div>	
 	</div>
 
 	

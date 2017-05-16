@@ -5,7 +5,7 @@
   <!--The viewport meta tag is used to improve the presentation and behavior of the samples 
     on iOS devices-->
   <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no"/>
-  <title></title>
+  <title>BCF防止margin嵌套重叠</title>
 
   <style> 
     html, body { height: 100%; width: 100%; margin: 0; padding: 0; }
@@ -15,21 +15,14 @@
     .first{
       margin:20px;
       background:lightgreen;
-      border: 2px solid lightgreen;
-      /* overflow: scroll; */
-      /* float: left; */
-      /* display:inline-block; */
-      /*overflow:hidden;*/
-      /*float: left;*/
-      position: absolute;
+      width:100px;
+      height:100px;      
     }
     ul{
-      overflow:hidden;
+      display:inline-block;
+      /* overflow: auto; */
       margin:10px;
       background:lightblue;
-      width:100px;
-      height:200px;
-      float: left;
     }
     li{
       margin:25px;
@@ -39,20 +32,14 @@
   
 </head> 
 
-<div>
-  test
-  <i></i>
-  <span>testtest</span>
-</div>
 <body class="claro"> 
-  <div class="first">
-    <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-    </ul>
-  </div>
-  
+  <div class="first"></div>
+  <ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+  </ul>
 </body> 
 
 </html>
+

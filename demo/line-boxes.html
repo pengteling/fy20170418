@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>行内框盒子模型</title>
+	<style>
+		.container{
+			background: #0f0;
+			width: 800px;			
+			margin: 100px auto;	
+			line-height: 90px;			
+			font-family: "宋体";
+			font-size: 30px;
+			border: #f00 1px solid;		
+		}
+		div.inline{
+			display: inline-block;	
+			background: #eee;			
+			color: #333;
+						
+		}
+		.inline img{
+			vertical-align: middle;
+		}
+		
+		
+
+	</style>
+</head>
+<body>
+	<!-- <div class="container">
+		<div class="inline"><span style="display: inline-block; background: #fff;">什么</span>是 <em>行内框</em>X什么是 <em>行内框</em>X什么是 <em>行内框</em>X什么是 <em>行内框</em>X</div>
+	</div> -->
+	<div class="container">
+		<div class="inline"><span style="display: inline-block;background: #0f0;">子模型？</span>什么是 <em>行内框</em> X<img src="pic/2.jpg" height="150" alt="">盒子模型？什么是 <em>行内框</em>xxxx 盒子模型？什么是 <em>行内框</em> 盒子模型？什么是 <em>行内框</em> 盒子模型？什么是  盒</div>
+	</div>
+	
+
+	<div>1、inline boxes <br>
+		2、一个一个的inline boxes 组成了 line boxes 深灰色背景(每一行) <br>
+		3、content area 跟字体有关 <br>
+		4、containing boxes  =>  .container 绿色背景
+	</div>
+
+
+	<style>
+		.test1{
+			margin-top: 50px;
+			font-size: 36px; line-height: 0; border: #333 1px solid;
+		}
+		.test2{
+			margin-top: 50px;
+			font-size: 0; line-height: 36px; border: #333 1px solid;
+		}
+	</style>
+
+	<div class="test1">测试行高</div>
+	<div class="test2">测试行高</div>
+
+	<div>
+		content area高度 + 行间距(可为负) =  行高
+	</div>
+
+	<div>
+		<span style="font-family: 宋体 ;font-size: 30px;">测试content area 与字体 字号</span>
+	</div>
+
+	
+</body>
+</html>

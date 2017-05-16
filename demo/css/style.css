@@ -347,6 +347,7 @@ a{
 	color: #ff6960;
 }
 .form-bar .ipt-txt{
+	vertical-align: middle;
 	width: 113px;
 	height: 28px;
 	color:#838383;
@@ -356,6 +357,7 @@ a{
 	padding-left: 15px;
 }
 .form-bar .ipt{
+	vertical-align: middle;
 	width:98px;
 	height: 28px;
 	margin-left: 22px;
@@ -364,6 +366,7 @@ a{
 	border:#383f4a 1px solid;
 }
 .form-bar .ipt-submit{
+	vertical-align: middle;
 	width:100px;
 	height: 30px;
 	color: #fff;

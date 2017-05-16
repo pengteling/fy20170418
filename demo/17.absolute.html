@@ -8,13 +8,15 @@
 		.box-1{
 			width: 700px;
 			height: 500px;
-			/* position: relative ; */
+			position: relative ;
+
 			border:  #000 10px solid;
 			padding: 20px;
 			background: #fff;
 			margin-top: 100px;
 			margin-left: 200px;
 			/* z-index: 2 */
+			/* z-index: 0; */
 		}
 		.box-2{
 
@@ -23,17 +25,30 @@
 			position: absolute;
 			margin-left: 50px;
 			margin-top: 50px;
-			/* left: 0px;
-			top: 0px; */
+			left: 0;
+			top: 0px;
+			z-index: 1;
 			/* z-index: 1; */
 			/* z-index: auto; */
 			
 			/* left:-50px;
 			top: 20px; */			
 		}
+		.box-2 .pic1{
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 2;
+		}
+		.box-2 .pic2{
+			position: absolute;
+			left: 50px;
+			top: 200px;
+			z-index: 1;
+		}
 		.box-2 .txt{
-			/* display: none; */
-			/* visibility: hidden; */
+			/* display: none;
+			visibility: hidden; */
 			position: absolute;
 			width: 100%;
 			left: 0;
@@ -45,7 +60,7 @@
 			background: rgba(0,0,0,0.5);
 			z-index: 3;
 		}
-		.box-2 .pic2{
+		/* .box-2 .pic2{
 			
 			width: 250px;
 			height: 180px;
@@ -53,13 +68,14 @@
 			bottom: -10px;
 			left: 200px;
 			z-index: 2;
-		}
+		} */
 		.box-3{
-			display: inline-block;
+			/* display: inline-block; */
 			position: absolute;
-			left: 0;
+			left: 100px;
 			top: 300px;
-			z-index: 1;
+			z-index: 2;
+			/* z-index: 1; */
 		}
 		
 	</style>
@@ -70,9 +86,14 @@
 <div class="box-1">
 	
 	<div class="box-2">
-		<img src="pic/1.jpg" alt="">
+		<img src="pic/1.jpg" alt="" class="pic1">
+
+		<div class="txt">这是一张风景图</div>
+
 		<!-- <div class="txt">这是一张风景图</div>
+		
 		<img src="pic/2.jpg" class="pic2" alt=""> -->
+		<img src="pic/2.jpg" class="pic2" alt="">
 	</div>
 	<p>
 		这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字这是一段文字
@@ -81,9 +102,9 @@
 	
 </div>
 
-<!-- <div class="box-3">
+<div class="box-3">
 		<img src="pic/3.jpg" alt="">
-</div> -->
+</div>
 
 </body>
 </html>

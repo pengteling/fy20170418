@@ -4,18 +4,65 @@
 	<meta charset="UTF-8">
 	<title>层叠顺序演示</title>
 	<style>
-	
+		body{
+			background:  #aaa;
+		}
+		.guan{
+			position: relative;
+			z-index: 0;
+		}
+		.pm{
+			margin-top: -300px;
+			margin-left: 100px;			
+		}
+		.pm-guan{
+			position: absolute;
+			z-index: -1;
+			margin-top: 30px;
+		}
+		.pm-pm{
+			margin-top: 200px;
+			margin-left: 100px;
+			border: #f00 10px solid;
+			display: block;
+			width: 500px;
+			/* float: left; */
+		}
+		.pm-2{
+			width: 500px;
+			margin-left: 300px;
+			margin-top: -300px;
+			border: #00f 10px solid;
+			/* z-index: -1;
+			position: relative; */
+			/* float: left; */
+			/* float: left; */
+			/* display: block; */
+			
+		}
+		.pm-2 img{
+			
+			/* float: left; */
+		}
+
 	</style>
 </head>
 <body>
 	
-	<div style="position: relative; z-index: auto ;">
-
-		<img src="pic/1.jpg" alt="" style="position: absolute; z-index: 9999;">
+	<div class="guan">
+		<img src="pic/1.jpg" alt="">
 	</div>
-	<div style="position: relative; z-index:auto; left: 200px;">
+	<div class="pm">
+		<div class="pm-guan">
+			<img src="pic/2.jpg" alt="">
+		</div>
+		<div class="pm-pm">
+			<img src="pic/3.jpg" alt="">
+		</div>
 
-		<img src="pic/2.jpg" alt="" style="position: absolute; z-index: 1;">
+	</div>
+	<div class="pm-2">
+		<img src="pic/4.jpg" alt="">
 	</div>
 		
 	

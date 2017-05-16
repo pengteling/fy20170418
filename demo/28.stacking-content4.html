@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>层叠上下文</title>
+	<style>
+		.subtit{
+			width: 190px;
+			height: 52px;
+			padding-left: 90px;
+			line-height: 52px;
+			background: url(../images/bg-subtit.png);
+			font-size: 18px;
+			color: #fff;	
+
+		}
+		.main{
+			/* overflow: auto; */
+			/* position: relative; */
+		}
+		.subtit{
+			/* display: inline-block; */
+			margin-top: -30px;
+		}
+		.banner img{
+			
+			/* position: relative; */
+			/* display: block; */
+			
+		}
+		.banner span{
+			display: block;
+			background: #0f0
+		}
+	</style>
+
+</head>
+<body>
+
+	<div class="banner">
+		<img src="images/banner-1.jpg" alt="">		
+	</div>
+	<div class="main">
+		<div class="subtit">课程简介</div>
+	</div>
+	
+</body>
+</html>
