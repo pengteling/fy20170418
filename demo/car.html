@@ -24,19 +24,38 @@
 			position: fixed;
 			left: 50%;
 			top: 20px;
-			margin-left: -191px;			
+			margin-left: -191px;	
+			z-index: 3;		
 		}
 		/* .container{
 			background: url(pic/enjoy_tit.png) 50% 20px no-repeat ;
 			background-attachment: fixed;
 		} */
 		.car{
+			position: relative;
 			padding-top: 200px;
 		}
 		.car img{
 			display: block;
 			margin: 0 auto;			
-			width: 100%;
+			width: 1440px;
+		}
+
+		.x3{
+			position: absolute;
+		    bottom: 60px;
+		    width: 1440px;
+		    height: 396px;
+		    left: 50%;
+		    margin-left: -720px;
+		    background: url(pic/a3.png) no-repeat 0px -4356px;
+		    
+		    animation: xu3 1.3s steps(11) infinite;
+		}
+
+		@keyframes xu3{
+			0% { background-position:0px 0px;}
+			100%{ background-position:0px -4356px;}
 		}
 	</style>
 </head>
@@ -47,6 +66,7 @@
 		<div class="tit"></div>
 		<div class="car">
 			<img src="pic/enjoy_car.png" alt="">
+			<div class="x3 nxu3"></div>
 		</div>
 		
 	</div>
