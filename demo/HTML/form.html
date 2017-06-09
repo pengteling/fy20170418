@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>form</title>
+</head>
+<body>
+	<form action="http://www.baidu.com" method="post" id="" class="">
+		<label for="username">用户名：</label>
+		<input type="text" size="30" maxlength="10" name="username" value="" placeholder="请输入用户名" class="ipt" id="username" >
+		<br>
+		<label for="pwd">密码：</label>
+		<input type="password" maxlength="20" name="pwd" class="ipt" id="pwd">
+		<br>
+		<input type="radio" name="edu" value="大学">大学
+		<input type="radio" name="edu" value="硕士" checked>硕士
+		<input type="radio" name="edu" value="博士">博士
+		<br>
+		<select name="edu-select">
+			<option value="">请选择你的学历</option>
+			<option value="大学" >大学</option>
+			<option value="硕士" selected>硕士</option>
+			<option value="博士">博士</option>
+		</select>
+		<br>
+
+		<!-- <input type="radio" name="price">10000
+		<input type="radio" name="price">20000
+		<input type="radio" name="price">30000 -->
+		<input type="checkbox" name="et" value="新闻" checked>新闻
+		<input type="checkbox" name="et" value="体育" checked>体育
+		<input type="checkbox" name="et" value="IT">IT
+		<input type="checkbox" name="et" value="娱乐">娱乐
+		<br>
+		<textarea name="content" id="content" cols="30" rows="10" class="textarea"></textarea>
+		<br>
+		<input type="file">
+		<br>
+		<input type="button" value="确定">
+		<br>
+		<button>确定</button>
+		<br>
+
+		<input type="submit" value="提交表单">
+
+
+		
+	</form>
+	
+</body>
+</html>

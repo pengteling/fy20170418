@@ -8,7 +8,7 @@ gulp.task('browser-sync', function() {
         'demo/**/*.html',
         'demo/css/**/*.css',
         'demo/js/**/*.js',
-        'images/**/*.{png,jpg,jpeg,svg,gif,ico}'
+        'demo/images/**/*.{png,jpg,jpeg,svg,gif,ico}'
     ];
     browserSync.init(files, {
         server: {
@@ -17,6 +17,19 @@ gulp.task('browser-sync', function() {
     });
 });
 
+gulp.task('browser-sync-2', function() {
+    var files = [
+        'old/**/*.html',
+        'old/css/**/*.css',
+        'old/js/**/*.js',
+        'old/images/**/*.{png,jpg,jpeg,svg,gif,ico}'
+    ];
+    browserSync.init(files, {
+        server: {
+            baseDir: './old/'
+        }
+    });
+});
 
 // gulp.task('html', function() {
 //     return gulp.src('./*.html')
@@ -39,3 +52,4 @@ gulp.task('browser-sync', function() {
 
 
 gulp.task('default',['browser-sync']);
+gulp.task('dev',['browser-sync-2']);

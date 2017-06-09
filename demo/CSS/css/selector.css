@@ -1,0 +1,41 @@
+/* 标签选择器 */
+/* div{
+	color: red;
+}
+p{
+	color: blue;
+} */
+
+/* .header{
+	color: blue;
+} */
+
+/* #header{
+	color:red;
+}
+#footer{
+	color:blue;
+} */
+/* .container .inner .txt{
+	color: red;
+}
+.container .other .txt{
+	colors: blue;
+}
+
+
+.container #inner .txt p{
+	color:#ff00ff;
+}
+.container #inner .txt p{
+	color:green;
+} */
+/* 
+[href="http://www.fydesigner.com"]{
+	color:#f00;
+} */
+
+
+a[target="_self"]{
+	color:#f00;
+}
