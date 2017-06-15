@@ -30,12 +30,175 @@ p{
 .container #inner .txt p{
 	color:green;
 } */
-/* 
-[href="http://www.fydesigner.com"]{
+
+
+
+
+
+/* #inner.inner .txt.fy p a{
+	color:#0f0;
+}
+.txt h2 a{
+	color:#ff00ff;
+} */
+
+/* 分组选择器 */
+/* .inner .txt a , .other .txt a{
+	color:#f00;
+}
+.inner .txt a{
+	
+} */
+
+
+
+ 
+/* [href="http://www.fydesigner.com"]{
+	color:#f00;
+} 
+
+a[target="_self"]{
+	color:#f00;
+} */
+/* [type=text]{
+	color: #f00
+}  */
+
+/* 属性选择器之自定义属性 */
+/* [data-item=fy]{
+	color:#f00;
+} */
+
+/* p[class~="important"] 等价于 p.important */
+/* p[class~="important"] {
+	color:#f00;
+}
+p.important{
+	color:#0f0;
+}
+
+p[data-type~="important"] {
+	color:#00f;
+}
+ */
+
+/* 开始等于
+p[class^="important"]{
+	color:#f00;
+} */
+
+/* 结尾等于
+p[class$="important"]{
 	color:#f00;
 } */
 
 
-a[target="_self"]{
+/* p[class*="important"]{
+	color:#f00;
+} */
+
+
+/* p[class|="important"]{
 	color:#f00;
 }
+div[class|="imain"]{
+	color:#0f0;
+} */
+
+
+/* >前面元素是后面元素的父元素
+p.five > a{
+	color:#0f0;
+} */
+
+/* p + p{
+	color: #f00;
+} */
+/*  p[class|=important]{
+	color:#00f;
+} 
+*/
+
+/*  选中  +前的元素紧跟的一个P元素并且类名含有important */
+
+/*  p[class|=important] + p.important {
+ 	color:#f00;
+}  
+
+*/
+p[class|=important] ~ p.important {
+ 	color:#f00;
+}  
+
+/* p[class|=important] ~ p.important {
+  	color:#f00;
+}  */
+/*  .five ~ p{
+	color:#f00
+}  */
+/*  .five ~ p.important{
+	color:#f00;
+}    */
+ 
+
+/* p[data-type~=important] + p.important{
+	color:#f00
+}  */
+/* a{
+	color:#f00;
+}
+
+伪类
+a:hover{
+	color:yellow;
+} */
+
+/* p:first-child{
+	color:#f00;
+} 
+p.first-child{
+	color:#f00;
+}
+a.hover{
+	color:yellow;
+} */
+/* a:first-child{
+	color:#f00;
+} */
+
+/* 伪元素 */
+
+/* p.important-us::first-letter{
+	color: #f00;
+	font-size: 30px;
+} */
+/* p.important-us .first-letter{
+	color: #f00;
+	font-size: 30px;
+} */
+/* p.important-us::first-line{
+	color:#f00;
+}  */
+/* p.important-us::before{
+	position: absolute;
+	content: "::before";
+	color: #0f0;
+	margin-top: -20px;
+}
+p.important-us::after{
+	position: absolute;
+	content: "::after";
+	color: #0f0;
+	margin-top: 0px;
+} */
+
+/* p.important-us span.before{
+	position: absolute;	
+	color: #0f0;
+	margin-top: -20px;
+}
+p.important-us span.after{
+	position: absolute;	
+	color: #0f0;
+	margin-top: 0px;
+} */

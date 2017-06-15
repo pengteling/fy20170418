@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>负边距</title>
+	<style>
+		ul,li{
+			padding: 0;
+			border: 0;
+			margin: 0;
+		}
+		.main{
+			/*width: 1000px;*/
+			/*margin: 100px auto;*/
+			border:#f00 1px solid;
+		}
+		div.inner{
+			height: 100px;
+			margin-right: -20px;
+			background: #eee;
+			margin-bottom: -50px;
+
+			margin-top: -50px;
+		}
+		body{
+			border:#f00 1px solid;
+			margin-top: 200px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<!-- <div class="main" id="main">
+		<div class="inner" id="inner">
+
+			testtesttesttesttest
+			<br>
+			testtest
+			<br>
+			test
+		</div>
+		<div class="inner">testtest
+		<br>test</div>
+
+
+	</div> -->
+
+	<div style="border:1px solid red;" id="margin">
+    <div style="height:50px;border:1px solid blue;margin-bottom:-10px" id="child"></div>
+		<p>test</p>
+</div>
+
+</body>
+</html>

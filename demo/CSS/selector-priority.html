@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS选择器优先级计算</title>
+	<link rel="stylesheet" href="css/priority.css">
+	<style>
+		/* .container .inner .big .small .link{
+			color: #f00;
+		}
+		.link{
+			color: #0f0;
+		}
+		.inner .big .small .link{
+			color: #0f0;
+		} */
+		
+		/* 权重值：0,0,4,0
+		.container .inner .big .link{
+			color: #f00;
+		}
+		
+		权重值： 0,0,4,0
+		.container .inner .big [href]{
+			color: #0f0;
+		} */
+		
+		/* 权重值：0,0,0,3
+		div p a{
+			color: #f00;
+		}
+		
+		权重值：0,0,0,3
+		div div a{
+			color: #0f0;
+		} */
+		
+
+		/* #link{
+			color: #0f0;
+		} */
+		
+		
+		/* css权重：0,2,6,2 */
+		div.container #inner.inner.item #big.big .small a[href]{
+			color: #0f0 !important;
+		}
+		
+		
+
+		/* a[href]#link{
+			color: #f00;
+		}
+		 */
+	</style>
+
+
+</head>
+<body>
+	<div class="container">
+		<div class="inner item" id="inner">
+			<div class="big" id="big">
+				<p class="small" id="small">
+					<a href="#222" id="link" class="link" style="color:#f0f">链接文字</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

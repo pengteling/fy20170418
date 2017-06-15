@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>padding和margin 实现等高布局(障眼法)</title>
+	<style>
+		.container{
+			/* overflow: hidden; */
+			margin-top: 100px;
+		}
+		.col{
+			/*display: inline-block;
+			vertical-align: top;*/
+			width: 200px;
+			line-height: 30px;
+			text-align: center;
+
+			/* padding-bottom:  99px; */
+			margin-bottom: -99px;
+
+
+
+		}
+		.col-1{
+			background: orange;
+		}
+		.col-2{
+			background: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="col col-1">
+			左列<br>
+			左列<br>
+			左列
+		</div>
+		<div class="col col-2">
+			右列<br>
+			右列<br>
+			右列<br>
+			右列
+		</div>
+	</div>
+
+</body>
+</html>
