@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>padding</title>
+	<style>
+		/* .container{			
+			height: 200px;
+			padding: 0 100px ;
+			background: #333;
+			color: #fff;
+		} */
+		.container{
+			box-sizing: border-box;
+			width: 500px;
+			height: 400px;
+			padding: 0 100px ;
+			background: #333;
+			color: #fff;
+		}
+		span{
+			padding: 20px 0px;
+			background: #f00;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		测试padding不会影响尺寸
+	</div>
+	<span>
+		测试inline元素的padding
+	</span>
+	
+</body>
+</html>

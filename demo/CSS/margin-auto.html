@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.container{
+			border: #fff 1px solid;
+			background: #00f;
+			width: 1000px;
+			height: 500px;
+			/* 这个应该写到父元素  改变书写方向 让原来水平居中实现成垂直居中*/
+			writing-mode: vertical-lr;
+		}
+		.inner{
+			width: 200px;
+			height: 200px;
+			/* margin-right: 200px;
+			margin-left: auto; */
+			border: #fff 1px solid;
+			/* 老师写错了，写到子元素里了，实际这个属性应该写在父元素里面 */
+			/* writing-mode: vertical-lr; */
+			margin: auto;
+			background: #0f0;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="inner">
+			
+		</div>
+	</div>
+	
+</body>
+</html>

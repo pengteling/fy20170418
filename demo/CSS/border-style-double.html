@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>border-style-double</title>
+	<style>
+		.three-bar{
+			width: 100px;
+			height: 20px;
+			border-top: #f00 60px double;
+			/* border-bottom: #f00 20px solid; */
+			background: #f00;
+			padding-top: 20px;
+			/* css3 将背景色的绘制区域改成content-box */
+			background-clip: content-box;
+		}
+
+		.three-bar-2{
+			width: 100px;
+			height: 10px;
+			margin-top: 50px;
+			border-top: #f00 30px double;
+			border-bottom: #f00 30px double;
+			background: #f00;
+			padding: 10px 0;
+			/* css3 将背景色的绘制区域改成content-box */
+			background-clip: content-box;	
+		}
+
+
+
+		.container{
+			width: 300px;
+			height: 200px;
+			border: 4px double;
+		}
+	</style>
+</head>
+<body>
+	<div class="three-bar"></div>
+
+	<div class="three-bar-2"></div>
+	<!-- <div class="container"></div> -->
+</body>
+</html>
