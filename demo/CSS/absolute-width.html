@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>绝对定位元素的宽度</title>
+	<style>
+		.container{
+			position: relative;	
+			width: 1000px;
+			height: 500px;
+			/* padding: 20px; */
+			border: #f00 1px solid;
+		}
+		.container .inner{
+			position: absolute;
+
+			left: 20px;
+			margin-left: 20px;
+			
+			width: 300px;
+			border: 20px #000 solid;
+			border-top: none;	
+			border-bottom: none;	
+			padding: 0 20px;
+			
+			
+			margin-right: 20px;
+			right: 500px;
+			
+				
+			
+			background: #ddd;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="inner">绝对定位元素</div>
+	</div>
+</body>
+</html>

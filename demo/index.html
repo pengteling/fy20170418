@@ -3,12 +3,13 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Zazar</title>
+	<link rel="stylesheet" href="style/font.css">
+	<link rel="stylesheet" href="style/normalize.css">
+	<link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-	<div class="header">
-		<div class="logo">
-			<a href="./"><img src="images/logo.png" alt="logo"></a>
-		</div>
+	<div class="header main">
+		
 		<div class="nav">
 			<a href="">Our Story</a>
 			<a href="">Menu</a>
@@ -16,12 +17,16 @@
 			<a href="">News</a>
 			<a href="">Rviews</a>
 		</div>
+
+		<div class="logo">
+			<a href="./"><img src="images/logo.png" alt="logo"></a>
+		</div>
 	</div>
 	<div class="banner">
 		<!-- 这张图实际作为背景图片 -->
 		<!-- <img src="images/banner.jpg" alt="banner"> -->
 		<div class="banner-title">
-			<img src="images/banner-txt.png" alt="banner text">
+			<!-- <img src="images/banner-txt.png" alt="banner text"> -->
 		</div>
 		<div class="banner-intro">
 		<!-- 下面的文字是匿名行内元素 -->
@@ -35,110 +40,290 @@
 			<div class="themenu">
 				<img src="images/themenu.png" alt="">
 			</div>
-			<ul>
-				<li>
-					<div class="tit">Voluptate cillum fugiat.</div>
-					<div class="intro">Cheese, tomato, mushrooms, onions.</div>
-					<div class="price">$50</div>
-				</li>
-				<li>
-					<div class="tit">Voluptate cillum fugiat.</div>
-					<div class="intro">Cheese, tomato, mushrooms, onions.</div>
-					<div class="price">$50</div>
-				</li>
-				<li>
-					<div class="tit">Voluptate cillum fugiat.</div>
-					<div class="intro">Cheese, tomato, mushrooms, onions.</div>
-					<div class="price">$50</div>
-				</li>
-				<li>
-					<div class="tit">Voluptate cillum fugiat.</div>
-					<div class="intro">Cheese, tomato, mushrooms, onions.</div>
-					<div class="price">$50</div>
-				</li>
-				<li>
-					<div class="tit">Voluptate cillum fugiat.</div>
-					<div class="intro">Cheese, tomato, mushrooms, onions.</div>
-					<div class="price">$50</div>
-				</li>
-				<li>
-					<div class="tit">Voluptate cillum fugiat.</div>
-					<div class="intro">Cheese, tomato, mushrooms, onions.</div>
-					<div class="price">$50</div>
-				</li>
-				<li>
-					<div class="tit">Voluptate cillum fugiat.</div>
-					<div class="intro">Cheese, tomato, mushrooms, onions.</div>
-					<div class="price">$50</div>
-				</li>
-				<li>
-					<div class="tit">Voluptate cillum fugiat.</div>
-					<div class="intro">Cheese, tomato, mushrooms, onions.</div>
-					<div class="price">$50</div>
-				</li>				
-			</ul>
+			<div class="main">
+				<ul class="clearfix">
+					<li>
+						<a href="">
+							<div class="tit">Voluptate cillum fugiat.</div>
+							<div class="intro">Cheese, tomato, mushrooms, onions.</div>
+							<div class="price">$50</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="tit">Voluptate cillum fugiat fugiat..</div>
+							<div class="intro">Cheese, tomato, mushrooms, onions.</div>
+							<div class="price">$50</div>
+						</a>
+					</li><li>
+						<a href="">
+							<div class="tit">Voluptate cillum fugiat.</div>
+							<div class="intro">Cheese, tomato, mushrooms, onions.</div>
+							<div class="price">$50</div>
+						</a>
+					</li><li>
+						<a href="">
+							<div class="tit">Voluptate cillum fugiat.</div>
+							<div class="intro">Cheese, tomato, mushrooms, onions.</div>
+							<div class="price">$50</div>
+						</a>
+					</li><li>
+						<a href="">
+							<div class="tit">Voluptate cillum fugiat.</div>
+							<div class="intro">Cheese, tomato, mushrooms, onions.</div>
+							<div class="price">$50</div>
+						</a>
+					</li><li>
+						<a href="">
+							<div class="tit">Voluptate cillum fugiat.</div>
+							<div class="intro">Cheese, tomato, mushrooms, onions.</div>
+							<div class="price">$50</div>
+						</a>
+					</li><li>
+						<a href="">
+							<div class="tit">Voluptate cillum fugiat.</div>
+							<div class="intro">Cheese, tomato, mushrooms, onions.</div>
+							<div class="price">$50</div>
+						</a>
+					</li><li>
+						<a href="">
+							<div class="tit">Voluptate cillum fugiat.</div>
+							<div class="intro">Cheese, tomato, mushrooms, onions.</div>
+							<div class="price">$50</div>
+						</a>
+					</li>			
+				</ul>
+			</div>
 			<div class="btn-loadmore">
 				<img src="images/btn-loadmore.png" alt="">
 			</div>
 		</div>
 		<!-- 这里是imain-2 -->
-		<div class="imain-2">
+		<div class="imain-2 main">
 			<h2>Featured Dishes</h2>
 			<div class="slider-circle">
-				<img src="images/circle.png" alt="">
+				<!-- <img src="images/circle.png" alt="">
 				<img src="images/circle-on.png" alt="">
 				<img src="images/circle.png" alt="">
-				<img src="images/circle.png" alt="">
+				<img src="images/circle.png" alt=""> -->
+				<a></a>
+				<a class="current"></a>
+				<a></a>
+				<a></a>
 			</div>
-			<dl>
-				<dt><img src="images/dishes-img-1.jpg" alt=""></dt>
-				<dd>Fugiat nulla sint</dd>
-				<dd>$30</dd>
-				<dd>
-					<img src="images/star-yellow.png" alt="">
-					<img src="images/star-yellow.png" alt="">
-					<img src="images/star-yellow.png" alt="">
-					<img src="images/star-yellow.png" alt="">
-					<img src="images/star-grey.png" alt="">
-				</dd>
 
+			<div class="slider">
+				<ul class="clearfix">
+					<li>
+						<div class="pic"><img src="images/dishes-img-1.jpg" alt=""></div>
+						<div class="tit">Fugiat nulla sint</div>
+						<div class="price">$30</div>
+						<div class="stars">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-grey.png" alt="">
+						</div>
+					</li>
+					<li>
+						<div class="pic"><img src="images/dishes-img-1.jpg" alt=""></div>
+						<div class="tit">Fugiat nulla sint</div>
+						<div class="price">$30</div>
+						<div class="stars">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-grey.png" alt="">
+						</div>
+					</li><li>
+						<div class="pic"><img src="images/dishes-img-1.jpg" alt=""></div>
+						<div class="tit">Fugiat nulla sint</div>
+						<div class="price">$30</div>
+						<div class="stars">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-grey.png" alt="">
+						</div>
+					</li><li>
+						<div class="pic"><img src="images/dishes-img-1.jpg" alt=""></div>
+						<div class="tit">Fugiat nulla sint</div>
+						<div class="price">$30</div>
+						<div class="stars">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-grey.png" alt="">
+						</div>
+					</li>
+					<li>
+						<div class="pic"><img src="images/dishes-img-1.jpg" alt=""></div>
+						<div class="tit">Fugiat nulla sint</div>
+						<div class="price">$30</div>
+						<div class="stars">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-grey.png" alt="">
+						</div>
+					</li>
+					<li>
+						<div class="pic"><img src="images/dishes-img-1.jpg" alt=""></div>
+						<div class="tit">Fugiat nulla sint</div>
+						<div class="price">$30</div>
+						<div class="stars">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-grey.png" alt="">
+						</div>
+					</li>
+					<li>
+						<div class="pic"><img src="images/dishes-img-1.jpg" alt=""></div>
+						<div class="tit">Fugiat nulla sint</div>
+						<div class="price">$30</div>
+						<div class="stars">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-grey.png" alt="">
+						</div>
+					</li>
+					<li>
+						<div class="pic"><img src="images/dishes-img-1.jpg" alt=""></div>
+						<div class="tit">Fugiat nulla sint</div>
+						<div class="price">$30</div>
+						<div class="stars">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-grey.png" alt="">
+						</div>
+					</li>
+					<li>
+						<div class="pic"><img src="images/dishes-img-1.jpg" alt=""></div>
+						<div class="tit">Fugiat nulla sint</div>
+						<div class="price">$30</div>
+						<div class="stars">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-grey.png" alt="">
+						</div>
+					</li>
+					<li>
+						<div class="pic"><img src="images/dishes-img-1.jpg" alt=""></div>
+						<div class="tit">Fugiat nulla sint</div>
+						<div class="price">$30</div>
+						<div class="stars">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-grey.png" alt="">
+						</div>
+					</li>
+					<li>
+						<div class="pic"><img src="images/dishes-img-1.jpg" alt=""></div>
+						<div class="tit">Fugiat nulla sint</div>
+						<div class="price">$30</div>
+						<div class="stars">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-grey.png" alt="">
+						</div>
+					</li>
+					<li>
+						<div class="pic"><img src="images/dishes-img-1.jpg" alt=""></div>
+						<div class="tit">Fugiat nulla sint</div>
+						<div class="price">$30</div>
+						<div class="stars">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-grey.png" alt="">
+						</div>
+					</li>
+					<li>
+						<div class="pic"><img src="images/dishes-img-1.jpg" alt=""></div>
+						<div class="tit">Fugiat nulla sint</div>
+						<div class="price">$30</div>
+						<div class="stars">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-grey.png" alt="">
+						</div>
+					</li>
+					<li>
+						<div class="pic"><img src="images/dishes-img-1.jpg" alt=""></div>
+						<div class="tit">Fugiat nulla sint</div>
+						<div class="price">$30</div>
+						<div class="stars">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-grey.png" alt="">
+						</div>
+					</li>
+					<li>
+						<div class="pic"><img src="images/dishes-img-1.jpg" alt=""></div>
+						<div class="tit">Fugiat nulla sint</div>
+						<div class="price">$30</div>
+						<div class="stars">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-grey.png" alt="">
+						</div>
+					</li>
+					<li>
+						<div class="pic"><img src="images/dishes-img-1.jpg" alt=""></div>
+						<div class="tit">Fugiat nulla sint</div>
+						<div class="price">$30</div>
+						<div class="stars">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-yellow.png" alt="">
+							<img src="images/star-grey.png" alt="">
+						</div>
+					</li>
+					
+				</ul>
+				<!-- <dl>
+					<dt><img src="images/dishes-img-1.jpg" alt=""></dt>
+					<dd>Fugiat nulla sint</dd>
+					<dd>$30</dd>
+					<dd>
+						<img src="images/star-yellow.png" alt="">
+						<img src="images/star-yellow.png" alt="">
+						<img src="images/star-yellow.png" alt="">
+						<img src="images/star-yellow.png" alt="">
+						<img src="images/star-grey.png" alt="">
+					</dd>
+				</dl> -->
+			</div>
 
-				<dt><img src="images/dishes-img-1.jpg" alt=""></dt>
-				<dd>Fugiat nulla sint</dd>
-				<dd>$30</dd>
-				<dd>
-					<img src="images/star-yellow.png" alt="">
-					<img src="images/star-yellow.png" alt="">
-					<img src="images/star-yellow.png" alt="">
-					<img src="images/star-yellow.png" alt="">
-					<img src="images/star-grey.png" alt="">
-				</dd>
-
-				<dt><img src="images/dishes-img-1.jpg" alt=""></dt>
-				<dd>Fugiat nulla sint</dd>
-				<dd>$30</dd>
-				<dd>
-					<img src="images/star-yellow.png" alt="">
-					<img src="images/star-yellow.png" alt="">
-					<img src="images/star-yellow.png" alt="">
-					<img src="images/star-yellow.png" alt="">
-					<img src="images/star-grey.png" alt="">
-				</dd>
-
-				<dt><img src="images/dishes-img-1.jpg" alt=""></dt>
-				<dd>Fugiat nulla sint</dd>
-				<dd>$30</dd>
-				<dd>
-					<img src="images/star-yellow.png" alt="">
-					<img src="images/star-yellow.png" alt="">
-					<img src="images/star-yellow.png" alt="">
-					<img src="images/star-yellow.png" alt="">
-					<img src="images/star-grey.png" alt="">
-				</dd>
-			</dl>
+				
 		</div>
 		<!-- 这里是imain-2 end -->
-		<div class="imain-3">
+		<div class="imain-3 main">
 			<h2>The Gallery</h2>
 			<div class="gallery-images">
 				<img src="images/gallery-img-1.jpg" alt="">

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS盒模型演示-嵌套的盒子</title>
+	<style>
+		.div1 img{
+			width: 300px;
+		}
+
+		.div1{
+			/* position: absolute; */
+			/* float: left; */
+			padding: 30px;
+			border: 20px #FDDD9B solid;
+			/* 为了显示内边距 */
+			background: #C2CF8A;
+
+			margin: 30px;
+			/* 利用CSS3阴影 把外边距区域用颜色 表示出来 */
+			box-shadow: 0 0 0 30px #F9CC9D;
+
+		}
+		.div2{			
+			/* float: left; */
+			padding: 30px;
+			border: 20px #FDDD9B solid;
+			/* 为了显示内边距 */
+			background: #C2CF8A;
+			margin: 40px;
+			/* 利用CSS3阴影 把外边距区域用颜色 表示出来 */
+			/* box-shadow: 0 0 0 40px #f00; */
+		}
+		.div3{
+
+			/* float: left; */
+			width: 700px;
+			/* padding: 30px;
+			border: 20px #FDDD9B solid; */
+			/* 为了显示内边距 */
+			background: #C2CF8A;
+
+			margin: 50px auto;
+			/* 利用CSS3阴影 把外边距区域用颜色 表示出来 */
+			/* box-shadow: 0 0 0 50px #F9CC9D; */
+		}
+
+	</style>
+</head>
+<body>
+	
+	
+			<div class="div3">
+				<div class="div2">
+					
+						<div class="div1">
+							<img src="images/1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			
+
+	<div class="content">
+		<p>这是一大段话这是一大段话这是一大段话这是一大段话这是一大段话</p>
+		<p></p>
+		<p></p>
+		<p>这是一大段话这是一大段话这是一大段话这是一大段话这是一大段话</p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+
+	</div>
+</body>
+</html>

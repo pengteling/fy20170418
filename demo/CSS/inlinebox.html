@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>行内框盒子模型</title>
+	<style>
+		.container{			
+			width: 800px;
+			margin: 100px auto;		
+			background: #0f0;		
+			font-family: "宋体";
+			font-size: 30px;	
+			/* line-height: 30px;	 */
+			line-height: 1;
+		}
+		.inline-block{
+			width: 200px;
+			height: 300px;
+			line-height: 300px;
+			padding: 20px 0;
+			margin: 30px 0;
+			display: inline-block;
+			background: #eee;
+			color: #333;
+			vertical-align: top;		
+		}
+		em{
+			vertical-align: top;
+			display: inline-block;
+			background: #eee;
+		}
+		/* .inline img{
+			vertical-align: middle;
+		} */
+
+		.container img{
+			width: 200px;
+			vertical-align: top;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<!-- 什么是 --> <img src="images/2.jpg" alt=""> <em>行内框</em> <span class="inline-block"></span><span style="display: inline-block;background: #fff">x</span>
+	</div>
+	
+
+	
+
+</body>
+</html>

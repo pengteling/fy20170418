@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>下拉菜单</title>
+	<style>
+		ul,li{
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		.menu{
+			position: relative;
+			width: 80px;
+			height: 24px;
+			background: url(images/demo/header-red.png);
+
+		}
+		.menu .cname{
+			height: 24px;
+			line-height: 22px;
+			background: url(images/demo/symbol.png) 60px 10px no-repeat;
+			color: #fff;
+			font-size: 14px;
+			padding-left: 20px;
+		}
+		.menu .dropmenu{
+			display: none;
+			position: absolute;
+			left: 0;
+			top: 24px;
+			width: 216px;
+			height: 182px;
+			background: url(images/demo/lightred.png);
+		}
+		.menu .dropmenu li{
+			
+			display: inline-block;
+			width: 31%;
+			line-height: 45px;
+			text-align: center;
+		}
+		.menu .dropmenu li a{
+			color: #fff;
+			font-size: 14px;
+			text-decoration: none;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="menu">
+		<div class="cname">书法</div>
+		<ul class="dropmenu">
+			<li><a href="">课程名</a></li>
+			<li><a href="">课程名</a></li>
+			<li><a href="">课程名</a></li>
+			<li><a href="">课程名</a></li>
+			<li><a href="">课程名</a></li>
+			<li><a href="">课程名</a></li>
+			<li><a href="">课程名</a></li>
+			<li><a href="">课程名</a></li>
+			<li><a href="">课程名</a></li>
+			<li><a href="">课程名</a></li>
+			<li><a href="">课程名</a></li>
+			<li><a href="">课程名</a></li>
+		</ul>
+	</div>
+	<!-- <div>测试</div> -->
+</body>
+</html>

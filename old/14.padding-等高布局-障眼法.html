@@ -5,21 +5,19 @@
 	<title>padding和margin 实现等高布局(障眼法)</title>
 	<style>
 		.container{
-			/* overflow: hidden; */
+			 overflow: hidden;
 			margin-top: 100px;
 		}
 		.col{
 			/*display: inline-block;
 			vertical-align: top;*/
+			float:left;
 			width: 200px;
 			line-height: 30px;
 			text-align: center;
 
-			/* padding-bottom:  99px; */
+			 padding-bottom:  99px;
 			margin-bottom: -99px;
-
-
-
 		}
 		.col-1{
 			background: orange;

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>绝对定位实现垂直居中</title>
+	<style>
+		.container{
+			width: 1000px;
+			height: 500px;
+			position: relative;
+			border: #f00 2px solid;
+		}
+		.inner{
+			position: absolute;
+			left: 50%;
+			/* margin-left: -250px; */			
+			top: 50%;
+			/* margin-top: -180px; */
+			/* css3属性 */
+			transform:translateX(-50%) translateY(-50%); 
+
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="inner">
+			<img src="images/4.jpg" alt="">
+		</div>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>绝对定位</title>
+    <style>
+    html,body{
+    	margin: 0;
+    	padding: 0;
+    }
+    .container {
+    	/* position: relative; */
+        width: 700px;
+        margin-left: 200px;
+        margin-top: 200px;
+
+        border: #f00 1px solid;
+    }
+    
+    .container div {
+        /* width: 300px;
+        height: 100px; */
+       /*  margin: 20px 20px; */
+        border: #0f0 10px solid;
+    }
+    
+    .container .div-2 {
+    	/* display: inline-block; */
+
+        position: absolute;         
+       /*  left: -1px;
+        top: -1px; */
+        width: 50%;
+        height: 50%;
+        margin-left: 50%;
+        /* margin-left: 100px;
+        margin-top: 50px;  */      
+        background: #00f;
+        border-color: #00f;
+    }
+    .box{
+    	position: relative;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+    	<div class="container">
+    	    <div class="div-1">1</div>
+    	    <div class="div-2">2</div>
+    	    <div class="div-3">3</div>
+    	</div>
+    </div>
+</body>
+
+</html>

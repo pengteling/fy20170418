@@ -1,0 +1,214 @@
+/* @import "normalize.css"; */
+
+
+/* 这里是CSS重置部分 */
+ul,li{
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+/* img{
+	border:0;
+}
+
+a{
+	text-decoration: none;
+} */
+
+/* 这里是CSS通用部分 */
+body{
+	max-width: 1500px;
+	margin: 0 auto;
+	font:16px "Aleo";
+}
+a{
+	text-decoration: none;
+}
+.main{
+	width:1100px;
+	margin:0 auto;
+}
+.clearfix:before,.clearfix:after{ 
+    content:""; 
+    display:table; 
+} 
+.clearfix:after{clear:both;} 
+.clearfix{ 
+    *zoom:1;IE/7/6
+}
+
+
+/* CSS主体部分 */
+/* header */
+.header{
+	height: 110px;
+}
+.header .logo{
+	padding-top: 40px;
+}
+.header .nav{
+	float:right;
+	line-height: 110px;
+	font-size: 0;
+}
+.header .nav a{
+	display: inline-block;
+	/* height: 50px; */
+	line-height: 50px;
+	margin-left: 46px;
+	vertical-align: middle;
+	font-size: 14px;
+	color: #3b3b3b;
+}
+
+/* banner */
+.banner{
+	height: 354px;
+	padding-top: 216px;
+	background: url(../images/banner.jpg) center top no-repeat;
+
+}
+.banner .banner-title{
+	width:776px;
+	height: 117px;
+	margin:0 auto;
+	background: url(../images/banner-txt.png);
+}
+.banner .banner-intro{
+	/* margin:0 auto; */
+	margin-top: 16px;
+	text-align: center;
+	/* font-size:16px; */
+	color:#fff;
+	letter-spacing: 1px;
+}
+.banner .banner-intro i{
+	/* position: relative;
+	top: -4px; */
+	display: inline-block;
+	width: 40px;
+	height: 1px;
+	/* vertical-align: middle; */
+	vertical-align: 4px;
+	margin:0 40px;	
+	background: #fff;
+}
+
+/* imain */
+.imain-1{
+	border-top: #f34949 4px solid;
+}
+.imain-1 .themenu{
+	text-align: center;
+}
+.imain-1 ul{
+	margin-top: 80px;
+	/* width: 1300px; */
+	margin-right: -108px;
+}
+.imain-1 ul li{
+	float: left;
+	position: relative;
+	width: 496px;
+	height: 92px;
+	margin-right: 108px;
+}
+.imain-1 ul li .tit{
+	float: left;
+	padding-right: 38px;
+	color: #555;
+	background: #fff;
+}
+.imain-1 ul li .price{
+	float: right;
+	color:#555;
+}
+.imain-1 ul li .intro{
+	position: absolute;
+	top: 24px;
+	color:#b7b7b7;
+	font-size:12px;
+}
+.imain-1 ul li::after{
+	position: absolute;
+	top: 9px;
+	z-index: -1;
+	content: "";
+	display: block;
+	width:420px;
+	height: 1px;
+	background: #e3e1e1;
+
+}
+.imain-1 .btn-loadmore{
+	margin: 32px 0 200px;
+	text-align: center;
+}
+
+.imain h2{
+	font-size:20px;
+	color: #3b3b3b;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.imain h2::after{
+	position: absolute;
+	margin-left: 16px;
+	margin-top: 10px;
+	display: inline-block;
+	content: "";
+	width: 200px;
+	height: 1px;
+	background: #e5e3e3;
+
+}
+.imain-2{
+	position: relative;
+}
+.imain-2 .slider-circle{
+	/* float: right; */
+	position: absolute;
+	top: 0;
+	right: 0; 
+}
+.imain-2 .slider-circle a{
+	display: inline-block;
+	margin-left: 10px;
+	width:9px;
+	height: 9px;
+	background: url(../images/circle.png);
+}
+.imain-2 .slider-circle a.current{
+	background: url(../images/circle-on.png);
+}
+.imain-2 .slider{
+	overflow: hidden;
+}
+.imain-2 ul{
+	height: 262px;
+	/* margin-top: 78px;
+	margin-right: -58px;
+	margin-bottom: 200px; */
+	width: 5000px;
+	margin:78px -58px 200px 0;
+
+}
+.imain-2 ul li{
+	float: left;
+	margin-right: 58px;
+}
+.imain-2 ul li .tit{
+	float: left;
+	margin-top: 14px;
+	line-height: 36px;
+	color: #555;
+}
+.imain-2 ul li .price{
+	float: right;
+	margin-top: 14px;
+	line-height: 36px;
+	color: #555;
+}
+.imain-2 ul li .stars{
+	clear:left;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>相对定位</title>
+	<style>
+		.container{
+			width: 700px;
+			border: #f00 1px solid;
+		}
+		.container div{
+			width: 300px;
+			height: 100px;
+			margin: 20px 20px;
+			border: #0f0 10px solid;
+		}
+		.container .div-2{
+			position: relative;
+			left: -150px;		
+			top: 100px;			
+			/* margin-bottom: -50px; */
+			/* margin-left: -100px; */
+			background: #00f;
+			border-color: #00f;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="div-1"></div>
+		<div class="div-2"></div>
+		<div class="div-3"></div>
+	</div>
+	
+</body>
+</html>
